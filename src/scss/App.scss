@@ -1,0 +1,398 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+html,
+body,
+#root {
+    width: 375px;
+    height: 100%;
+}
+
+.home-page {
+    width: 100%;
+    height: 100%;
+
+    .title {
+        width: 100%;
+        height: 50px;
+        background: pink;
+        text-align: center;
+        line-height: 50px;
+        font-size: 20px;
+    }
+
+    .nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-items: center;
+        font-size: 18px;
+
+        p {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-indent: 10px;
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            border-bottom: 1px solid #ccc;
+
+            span {
+                font-size: 20px;
+                margin-right: 40px;
+            }
+
+            a {
+                height: 50px;
+                line-height: 50px;
+            }
+        }
+    }
+
+}
+
+
+/* BScroll组件*/
+.MyBscroll-page {
+    width: 100%;
+    height: 100%;
+
+    .back {
+        width: 100%;
+        height: 50px;
+    }
+}
+
+.scroll-box {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+
+    .scroll-content {
+        width: 100%;
+
+        // height: 800px;
+        .scroll-item {
+            height: 100px;
+            border-bottom: 1px solid #ccc;
+
+            p {
+                height: 30px;
+                text-indent: 20px;
+                padding: 5px;
+            }
+
+            .name {
+                font-size: 18px;
+                font-weight: bold;
+            }
+
+        }
+    }
+}
+
+/* 点击返回 back组件*/
+.back-page {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 50px;
+    background: lightskyblue;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+
+    span {
+        margin-right: 130px;
+    }
+}
+
+
+.back {
+    width: 100%;
+    height: 50px;
+}
+
+/* header组件*/
+.header-page {
+    width: 100%;
+
+    .one-box {
+        width: 100%;
+        background: cornsilk;
+
+        p {
+            width: 100%;
+            height: 20px;
+            line-height: 20px;
+            text-indent: 20px;
+        }
+
+        .one-inner {
+            width: 100%;
+            height: 50px;
+            background: #ccc;
+            margin-top: 10px;
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+    }
+}
+
+/* table组件*/
+table {
+    margin-top: 20px;
+    width: 500px;
+    // height: 400px;
+    background: #ccc;
+    border: #fff 1px solid;
+
+    thead>tr {
+        width: 100%;
+        height: 60px;
+        background: #eee;
+        td{
+            width: 24%;
+        }
+
+    }
+
+    tbody>tr {
+        width: 100%;
+        height: 60px;
+        background: #eee;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+
+/* 详情页组件*/
+.detail-page {
+    width: 100%;
+
+    .scroll-content {
+        width: 100%;
+
+        // height: 800px;
+        .scroll-item {
+            height: 100px;
+            border-bottom: 1px solid #ccc;
+
+            p {
+                height: 30px;
+                text-indent: 20px;
+                padding: 5px;
+            }
+
+            .name {
+                font-size: 18px;
+                font-weight: bold;
+            }
+
+        }
+    }
+
+}
+
+/* 收藏组件*/
+.home-page {
+	width: 100%;
+	
+	.toCollectBtn{
+		width: 100%;
+		height: 50px;
+		background: pink;
+		line-height: 50px;
+		text-align: center;
+	}
+    .good {
+		width: 100%;
+		height: 120px;
+        position: relative;
+        display: flex;
+		margin: 20px;
+		border-bottom: 1px solid #ccc;
+		.btn {
+			position: absolute;
+			right: 0;
+			bottom: -10px;
+			margin: 0;
+			padding: 0 20px;
+	
+			line-height: 40px;
+			margin: 20px;
+			background-color: lightskyblue;
+			color: white;
+			text-align: center;
+		}
+
+        .pic {
+            width: 30%;
+            margin-right: 20px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .text {
+            width: 70%;
+        }
+    }
+
+    .empty {
+        text-align: center;
+        padding: 50px 0;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+        line-height: 50px;
+        background-color: lightskyblue;
+        color: white;
+    }
+}
+
+/* ShoppingCar 购物车组件*/
+.ShoppingCar-page{
+    width: 100%;
+    height: 100%;
+    .nav-two{
+        width: 100%;
+        height: 40px;
+        background: pink;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        a{
+            color: #333;
+            padding: 5px ;
+            border-bottom: 1px solid transparent;
+            &.active{
+                color: orangered;
+                border-bottom: 2px solid orangered;
+            }
+        }  
+    }
+
+     // 所有商品 
+     .AllGood-list{
+        width: 100%;
+        height: 100%;
+        .list-item{
+            width: 100%;
+            height: 120px;
+            border-bottom: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            .pic{
+                flex: 3;
+                img{
+                    width: 100%;
+                    height: 100%;
+                   
+                }
+            }
+            .text{
+                flex: 4;
+                line-height: 30px;
+                margin-left: 20px;
+                .price{
+                    color: orange;
+                }
+            }
+            .ope{
+                flex: 3;
+                border: 1px solid #eee;
+                background: cornsilk;
+                text-align: center;
+                line-height: 30px;
+               
+                
+            }
+            
+        }
+    }
+}
+
+//购物车列表
+.CarList-list{
+    width: 100%;
+    height: 100%;
+    .list-item{
+        width: 100%;
+        height: 120px;
+        border-bottom: 1px solid #ccc;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+        .pic{
+            margin-left: 20px;
+            img{
+                width: 100%;
+                height: 100%; 
+            }
+        }
+        .text{
+            line-height: 30px;
+            margin-left: 20px;
+            .price{
+                color: orange;
+            }
+        }
+        .check-box{
+            border: 1px solid #eee;
+            background:#ccc;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            span{
+                display: block;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;     
+            } 
+        }
+        .btn{
+            flex: 1;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .ope{
+                background: chartreuse;
+                margin-left: 10px;
+                display: inline-block;
+                width: 25px;
+                height: 30px;
+                text-align: center;
+                line-height: 30px;
+
+
+            }
+
+        }
+        
+    }
+    .empty{
+        text-align: center;
+        padding: 50px;
+    }
+}
+
